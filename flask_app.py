@@ -46,7 +46,7 @@ def Topic_modeling():
 	sols = topic_obj.solutions
 	problem_cat = topic_obj.topic
 	print(problem_cat)
-	return jsonify(results = {problem:problem_cat})
+	return jsonify(results = {problem:problem_cat[0][0]})
 	
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=9002)
